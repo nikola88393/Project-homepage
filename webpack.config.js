@@ -52,6 +52,10 @@ module.exports = {
         test: /\.xml$/i,
         use: ["xml-loader"],
       },
+      {
+        test: /\.svg$/,
+        loader: "svg-inline-loader",
+      },
     ],
   },
   plugins: [

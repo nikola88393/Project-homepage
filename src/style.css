@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    background-color: #efefef;
+    font-family:'Work Sans';
+}
+header{
+    /* padding: 1.5em; */
+    position: fixed;
+    width: 90%;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+}
+.nav-logo{
+    background: url('./attention-exclamation-notification-svgrepo-com.png');
+    background-position: center;
+    background-size: contain;
+    width: 75px;
+    height: 75px;
+    animation: 2s alternate-reverse infinite rotate-logo;
+    /* transform: rotate(0deg); */
+    /* animation-delay: 1s; */
+}
+.floating-nav{
+    /* border: 1px solid red; */
+    border-radius: 10px;
+    background-color: rgba(211, 211, 211, 0.7);
+    /* backdrop-filter: blur(5px); */
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1em;
+    backdrop-filter: blur(5px);
+    /* opacity: 0.3; */
+}
+.floating-nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+}
+ul li{
+    margin: 0 3em;
+}
+.section-heading{
+    margin: 0 auto;
+    width: fit-content;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.about-me{
+    padding-top: 110px;
+    border: 1px solid red;
+    height: 100vh;
+}
+.about-me-info{
+    display: flex;
+    gap: 20px;
+    /* border: 1px solid red; */
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 1em;
+    height: fit-content;
+}
+/* .info-first,
+.info-second{
+    border: 1px solid red;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.info-first{
+    flex: 2;
+    position: relative;
+}
+.info-second{
+    flex: 1;
+} */
+.info-second{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+.info-second p,
+.info-third {
+    /* border: 1px solid red; */
+    /* width: 80%; */
+    /* align-self: flex-start; */
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+/*  */
+
+.about-me-name{
+    position: absolute;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+    bottom: 0;
+}
+
+.text-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about-me-introduction{
+    border: 1px solid red;
+    height: auto;
+}
+.about-me-img{
+    /* max-width: 500px; */width: 100%;
+    border-radius: 10px;
+}
+@keyframes rotate-logo{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-15deg);
+    }
+    100%{
+        transform: rotate(15deg);
+    }
+}
